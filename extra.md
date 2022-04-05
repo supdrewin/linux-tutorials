@@ -61,13 +61,32 @@
 
 3. 启动虚拟机
 
-   TODO
+   1. 选中第一项，直接回车。稍等片刻，启动成功后会自动登陆
+      `root` 用户。
 
-这里给一些小提示：
+   2. 下载并执行 `安装脚本`：
 
-- 不要忘记设置 `root` 密码
+      ``` shell
+      $ curl -O https://raw.githubusercontent.com/supdrewin/linux-tutorials/master/install.sh
+      $ chmod +x install.sh
+      $ ./install.sh
+      ```
 
-可参考 [ArchWiki](https://wiki.archlinux.org/title/Installation_guide)
+      如果连接不上 `raw.githubusercontent.com`，先试试下面这个，然后重试上面那个：
+
+      ``` shell
+      $ echo "185.199.109.133 raw.githubusercontent.com" >>/etc/hosts
+      ```
+
+   3. 安装完成后，重启即可进入新系统
+      (用户名和密码都是 `root`)：
+
+      ``` shell
+      $ reboot
+      ```
+
+由于我们暂时不需要 `桌面环境`，所以现在不安装增强功能。如对安装细节感兴趣，可以查看
+[ArchWiki](https://wiki.archlinux.org/title/Installation_guide)。
 
 ### 跳转
 
