@@ -14,7 +14,7 @@
   [安装虚拟机](https://github.com/supdrewin/linux-tutorials/blob/master/extra.md)
   代替本章
 - 如果是 FreeBSD，以后会介绍它的 `Linux 兼容模块`
-- 其他系统，暂时没想到，先双系统吧
+- 其他**非 Linux 系统**，暂时没想到，先双系统吧
 
 ### 环境搭建
 
