@@ -85,6 +85,14 @@
    $ locale-gen
    ```
 
+   同时我们需要调整时区使时间正确 (可以输入 `date`
+   确认当前时间是否正确)，这里我们使用 `ln` 强制 (`-f`)
+   创建一个符号链接 (`-s`)。
+
+   ``` shell
+   $ ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+   ```
+
 5. 配置 `pacman`
 
    尝试安装

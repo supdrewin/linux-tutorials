@@ -36,4 +36,39 @@
    [PUEL](https://www.virtualbox.org/wiki/VirtualBox_PUEL)
    与 `VirtualBox` 不一样，此过程需要同意许可证。
 
+3. 查阅资料熟悉 `VirtualBox`
+
 ### 安装 Arch Linux
+
+1. 下载最新的 `ArchISO`，快速链接：点击
+   [archlinux-bootstrap-2022.04.01-x86_64.iso](https://mirrors.ustc.edu.cn/archlinux/iso/2022.04.01/archlinux-2022.04.01-x86_64.iso)
+
+2. 打开 `VirtualBox`，新建一个虚拟机
+
+   - 类型：Linux
+   - 版本：Arch Linux (64-Bit)
+
+   注意事项：
+
+   - 内存根据宿主机配置调整，最好不要超过宿主机内存的一半
+   - 虚拟磁盘的大小尽量大些，因为默认是动态的不会占用太多空间
+   - 创建完成后进入 `设置` -> `系统`，打开 `启用 EFI`
+   - 进入 `设置` -> `显示` 将 `显存大小` 拉到最大
+     (可选打开 `启用3D加速`)
+   - 如果是固态硬盘，进入 `设置` -> `存储`，将所有
+     `使用主机输入输出缓存` 和
+     `固态驱动器` 打开
+
+3. 启动虚拟机
+
+   TODO
+
+这里给一些小提示：
+
+- 不要忘记设置 `root` 密码
+
+可参考 [ArchWiki](https://wiki.archlinux.org/title/Installation_guide)
+
+### 跳转
+
+下一个：[第 00 章](https://github.com/supdrewin/linux-tutorials/blob/master/ch-00.md)
