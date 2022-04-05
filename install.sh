@@ -45,7 +45,10 @@ done
 pacstrap /mnt base linux linux-firmware networkmanager
 genfstab -U /mnt >>/mnt/etc/fstab
 
-arch-chroot /mnt bash -c "$(sed -n 51,77p "$0")"
+UUID=$(cat </mnt/etc/fstab | grep -A1 "${DISK}2" | tail -1)
+echo "root=${UUID%/*}" >/mnt/etc/kernel/cmdline
+
+arch-chroot /mnt bash -c "$(sed -n 54,75p "$0")"
 umount -R /mnt && exit $?
 
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
@@ -60,12 +63,7 @@ echo "archvm" >/etc/hostname
 echo "root
 root" | passwd
 
-UUID=$(cat </etc/fstab | grep -A1 "${DISK}2" | tail -1)
-echo "root=${UUID%/*}" >/etc/kernel/cmdline
-
-mkdir -p /boot/efi/boot
-
-objcopy \
+mkdir -p /boot/efi/boot && objcopy \
         --add-section .osrel="/usr/lib/os-release" --change-section-vma .osrel=0x20000 \
         --add-section .cmdline="/etc/kernel/cmdline" --change-section-vma .cmdline=0x30000 \
         --add-section .splash="/usr/share/systemd/bootctl/splash-arch.bmp" --change-section-vma .splash=0x40000 \
