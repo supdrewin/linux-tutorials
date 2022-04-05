@@ -1,4 +1,4 @@
-# ✨ Linux 实验教程 ✨
+# ✨ Supdrewin's Linux Tutorials ✨
 
 ### 必要准备
 
@@ -10,8 +10,8 @@
 这里 `宿主机` 指的是你连接电源进入的第一个操作系统。
 
 - 如果是 Arch Linux，可以跳过本章
-- 如果是 macOS 或 Windows，使用
-  [这篇](https://github.com/supdrewin/linux-tutorials/blob/master/extra.md)
+- 如果是 macOS 或 Windows，使用这篇
+  [安装虚拟机](https://github.com/supdrewin/linux-tutorials/blob/master/extra.md)
   代替本章
 - 如果是 FreeBSD，以后会介绍它的 `Linux 兼容模块`
 - 其他系统，暂时没想到，先双系统吧
