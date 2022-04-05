@@ -64,7 +64,8 @@
    1. 选中第一项，直接回车。稍等片刻，启动成功后会自动登陆
       `root` 用户。
 
-   2. 下载并执行 `安装脚本`：
+   2. 下载并执行 `安装脚本`
+      (此脚本仅适用于 **虚拟机** 安装，切勿在 **实体机** 上尝试)：
 
       ``` shell
       $ curl -O https://raw.githubusercontent.com/supdrewin/linux-tutorials/master/install.sh
