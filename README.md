@@ -107,6 +107,8 @@
 
 到此实验环境搭建就告一段落了，🎉
 以后我们将会继续使用这个 `chroot` 的 Arch Linux
-环境进行实验，并且会对本节一些令人困惑的地方进行扩充。
+环境进行实验，并且会对本节一些令人迷惑的地方进行扩充。
+
+### 跳转
 
 下一个：[第 00 章](https://github.com/supdrewin/linux-tutorials/blob/master/ch-00.md)
