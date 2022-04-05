@@ -48,8 +48,10 @@ genfstab -U /mnt >>/mnt/etc/fstab
 UUID=$(cat </mnt/etc/fstab | grep -A1 "${DISK}2" | tail -1)
 echo "root=${UUID%/*}" >/mnt/etc/kernel/cmdline
 
-arch-chroot /mnt bash -c "$(sed -n 54,75p "$0")"
-umount -R /mnt && exit $?
+arch-chroot /mnt bash -c "$(sed -n 56,77p "$0")"
+
+umount -R /mnt
+exit $?
 
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 hwclock --systohc
