@@ -28,7 +28,8 @@
    - 扩展包 (VirtualBox 6.1.xx Oracle VM VirtualBox Extension Pack) ——
      全平台通用，只有一个
 
-   如果下载速度过慢，可以尝试从以下链接下载 (来自 `mirrors.tuna.tsinghua.edu.cn`):
+   如果下载速度过慢，可以尝试从以下链接下载 (来自
+   [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn)):
 
    - 安装包
      - [macOS](https://mirrors.tuna.tsinghua.edu.cn/virtualbox/6.1.32/VirtualBox-6.1.32-149290-OSX.dmg)
