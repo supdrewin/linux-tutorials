@@ -43,7 +43,7 @@
    (此按钮在右边一栏，图标不带文字)
    然后选择我们刚才下载好的扩展包添加。
 
-   **注意：**由于扩展包的分发方式
+   **注意**：由于扩展包的分发方式
    [PUEL](https://www.virtualbox.org/wiki/VirtualBox_PUEL)
    与 `VirtualBox` 不一样，此过程需要同意许可证。
 
