@@ -31,7 +31,7 @@ n
 
 w" | fdisk "$DISK"
 
-mkfs.ext4 "${DISK}2"
+mkfs.ext4 -F "${DISK}2"
 mkfs.fat -F32 "${DISK}1"
 
 mount "${DISK}2" /mnt && mkdir /mnt/boot
