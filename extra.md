@@ -23,13 +23,24 @@
 
    我们需要下载两个东西：
 
-   - platform packages —— 根据你的宿主机 (host) 选择合适的版本
-   - Oracle VM VirtualBox Extension Pack —— 只有一个
+   - 安装包 (VirtualBox 6.1.xx platform packages) ——
+     根据你的宿主机 (host) 选择合适的版本
+   - 扩展包 (VirtualBox 6.1.xx Oracle VM VirtualBox Extension Pack) ——
+     全平台通用，只有一个
+
+   如果下载速度过慢，可以尝试从以下链接下载 (来自 `mirrors.tuna.tsinghua.edu.cn`):
+
+   - 安装包
+     - [macOS](https://mirrors.tuna.tsinghua.edu.cn/virtualbox/6.1.32/VirtualBox-6.1.32-149290-OSX.dmg)
+     - [Windows](https://mirrors.tuna.tsinghua.edu.cn/virtualbox/6.1.32/VirtualBox-6.1.32-149290-Win.exe)
+   - 扩展包
+     - [全平台通用](https://mirrors.tuna.tsinghua.edu.cn/virtualbox/6.1.32/Oracle_VM_VirtualBox_Extension_Pack-6.1.32.vbox-extpack)
 
 2. 安装 (macOS 的安装会有点不一样)
 
    在安装完 `VirtualBox` 之后，打开 `VirtualBox`，然后在菜单中进入
    `管理` -> `全局设定` -> `扩展`，点击 `添加新包`
+   (此按钮在右边一栏，图标不带文字)
    然后选择我们刚才下载好的扩展包添加。
 
    **注意：**由于扩展包的分发方式
